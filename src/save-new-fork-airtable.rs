@@ -4,16 +4,16 @@ use slack_flows::send_message_to_channel;
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
-    let login = "alabulei1";
-    let owner = "WasmEdge";
-    let repo = "WasmEdge";
+    let login = "yoname";
+    let owner = "yomorun";
+    let repo = "yomo";
 
     listen_to_event(login, owner, repo, vec!["fork"], handler).await;
 }
 
 async fn handler(payload: EventPayload) {
     let account: &str = "github";
-    let base_id: &str = "appNEswczILgUsxML";
+    let base_id: &str = "appN337YR9Lt67MxA";
     let table_name: &str = "fork";
 
     if let EventPayload::ForkEvent(e) = payload {
