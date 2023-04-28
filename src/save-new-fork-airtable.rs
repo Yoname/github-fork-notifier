@@ -4,7 +4,7 @@ use slack_flows::send_message_to_channel;
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
-    let login = "yoname";
+    let login = "Yoname";
     let owner = "yomorun";
     let repo = "presencejs";
 
