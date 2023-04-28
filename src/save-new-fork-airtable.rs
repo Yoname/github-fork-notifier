@@ -6,7 +6,7 @@ use slack_flows::send_message_to_channel;
 pub async fn run() {
     let login = "yoname";
     let owner = "yomorun";
-    let repo = "yomo";
+    let repo = "presencejs";
 
     listen_to_event(login, owner, repo, vec!["fork"], handler).await;
 }
